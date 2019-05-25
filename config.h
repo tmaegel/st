@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "Hack:size=10:antialias=true:autohint=true";
-static int borderpx = 0;
+static int borderpx = 4;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -85,24 +85,24 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#262626", // background
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"#f2f2f2", // foreground
+	"#0d131a", // background
+	"#ac444d",  // red
+	"#5e9f60",  // green
+	"#d0661c", // yellow
+	"#4296bc",  // blue
+	"#63537e",  // magenta
+	"#298486",  // cyan
+	"#8b9499", // foreground
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"gray50",  // background
+	"#ac444d",  // red
+	"#5e9f60",  // green
+	"#d0661c",  // yellow
+	"#4296bc", // blue
+	"#63537e",  // magenta
+	"#298486",  // cyan
+	"white",   // foreground
 
 	[255] = 0,
 
